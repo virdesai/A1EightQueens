@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="vircomp590.a1eightqueens.MainActivity"
+    android:id="@+id/frame">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        android:id="@+id/clear"
+        android:layout_gravity="bottom|start" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quit"
+        android:id="@+id/quit"
+        tools:ignore="RelativeOverlap"
+        android:layout_gravity="bottom|end" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vir"
+        android:id="@+id/vir"
+        android:layout_gravity="center_horizontal|bottom" />
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid"
+        android:clickable="true"
+        android:verticalSpacing="0dp"
+        android:horizontalSpacing="0dp"
+        android:foregroundGravity="center"
+        android:stretchMode="columnWidth"
+        android:numColumns="8"
+        android:layout_gravity="center_horizontal|top"
+        android:padding="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:layout_gravity="start|center_vertical"
+        android:clickable="false"
+        android:textColor="@color/black"
+        android:visibility="visible"
+        android:text="@string/empty" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/errors"
+        android:layout_gravity="left|center_vertical"
+        android:textColor="@color/red"
+        android:visibility="visible"
+        android:singleLine="false"
+        android:text="@string/empty" />
+
+</FrameLayout>

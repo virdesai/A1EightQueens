@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Eight Queens</string>
+    <string name="clear">Clear</string>
+    <string name="quit">Give Up</string>
+    <string name="vir">How to</string>
+    <string name="empty"></string>
+    <string name="virText">How to Play the Game: \n \nThe goal of the game is to place a queen piece in each row and each column
+        so that they do not share a row, column, or diagonal with any other queen on the board. Click on colored squares, starting
+        from the left, to make queens appear. You are only allowed to place 1 queen in each column and must only place queens in
+        the column next to your last move. If a move is not allowed a message will appear to let you know why. To remove a queen,
+        click on the queen that is furthest right and continue left to remove more. You will not be allowed to remove a queen if
+        there are queens placed right of it, you must go back through and remove the others first. If you would like to remove all
+        of the queens on your board and start fresh, click the \'Clear\' button in the bottom left corner. If you are stuck and want to
+        be shown if there are any solutions left click the \'Give Up\' button in the bottom right corner. Thanks for playing!</string>
+    <string name="clearText">Are you sure you want to clear the entire board?</string>
+    <string name="quitText">Are you sure you want to give up and see a solution?</string>
+    <string name="noSol">Error: No solutions found</string>
+</resources>
